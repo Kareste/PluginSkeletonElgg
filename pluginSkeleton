@@ -24,5 +24,5 @@ else
     echo mkdir -p "$1/views/default/widgets/$1_widget/" | bash -x
     echo touch "$1/start.php" | bash -x
     echo touch "$1/manifest.xml" | bash -x
-    echo -e "<?xml version="1.0" encoding="UTF-8"?>\n<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">\n\t<name>Example Manifest</name>\n\t<author>Elgg</author>\n\t<version>1.0</version>\n\t<description>This is a simple example of a manifest file.  In this example, there are not screenshots, dependencies, or additional information about the plugin.</description>\n\t<requires>\n\t\t<type>elgg_version</type>\n\t\t<version>2011010401</version>\n\t</requires>\n</plugin_manifest>" >> "$1/manifest.xml"
+    echo -e "<?xml version=\"1.0\"' encoding=\"UTF-8\"?>\n<plugin_manifest xmlns=\"http://www.elgg.org/plugin_manifest/1.8\">\n\t<name>Example Manifest</name>\n\t<author>Elgg</author>\n\t<version>1.0</version>\n\t<description>This is a simple example of a manifest file.  In this example, there are not screenshots, dependencies, or additional information about the plugin.</description>\n\t<requires>\n\t\t<type>elgg_version</type>\n\t\t<version>2011010401</version>\n\t</requires>\n</plugin_manifest>" >> "$1/manifest.xml"
 fi
